@@ -18,21 +18,21 @@ close = []
 check = True
 open.append(("/","A"))
 
-print(open)
+# print(open)
 
 while(check):
     if len(open) == 0:
         print("Target not Found")
         break
     n = open.pop()
-    print(n[1])
+    # print(n[1])
     if n[1] == node:
         print("Target Hits...")
         check= False
 
     children = grpah[n[1]]
 
-    print(children)
+    # print(children)
 
     for child in children[::-1]:
         if not ((n[1],child) in close):
