@@ -25,7 +25,7 @@ while(check):
         print("Target not Found")
         break
     n = open.pop()
-    # print(n[1])
+    #print(n)
     if n[1] == node:
         print("Target Hits...")
         check= False
@@ -40,23 +40,3 @@ while(check):
     # print(open)
     close.append(n)
     # print(close)
-
-
-    
-
-
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
