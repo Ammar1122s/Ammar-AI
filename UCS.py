@@ -7,6 +7,7 @@ grpah = { "A":[("B",2,2),("C",4,4)],
          "F":[("B",2,2)],
          "G":[("C",2,2)]}
 
+# "A" parent ("B",2,2) "B" is child 2 is it's weight and next 2 is g(n)
 
 node = input("Enter the Node: ")
 
