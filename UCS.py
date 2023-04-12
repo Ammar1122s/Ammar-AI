@@ -27,6 +27,7 @@ while check:
         n = open.pop(0)
         if n[1] == node:
          print("Target Hits!")
+         print(n)
          check=False
      
         children = grpah[n[1]]
@@ -38,4 +39,4 @@ while check:
     
      close.append(n)
      open.sort(key= lambda x: x[3])
-     print(open)
+     #print(open)
