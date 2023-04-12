@@ -1,4 +1,3 @@
-
 grpah = { "A":["B","C"],
          "B":["F","A"],
          "C":["F","D","E","A"],
@@ -23,20 +22,21 @@ open.append(("/","A"))
 while(check):
     if len(open) == 0:
         print("Target not Found")
-        break
-    n = open.pop()
-    #print(n)
-    if n[1] == node:
-        print("Target Hits...")
-        check= False
+        check = False
+    if check:
+        n = open.pop()
+        #print(n)
+        if n[1] == node:
+            print("Target Hits...")
+            check= False
 
-    children = grpah[n[1]]
+        children = grpah[n[1]]
 
-    # print(children)
+        # print(children)
 
-    for child in children[::-1]:
-        if not ((n[1],child) in close):
-            open.append((n[1],child))
-    # print(open)
-    close.append(n)
-    # print(close)
+        for child in children[::-1]:
+            if not ((n[1],child) in close):
+                open.append((n[1],child))
+        # print(open)
+        close.append(n)
+        print(close)
