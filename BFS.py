@@ -30,7 +30,9 @@ while True:
      children = grpah[n[1]]
      
      for child in children:
-         if not ((n[1],child) in close):
+        if not ((n[1],child) in close):
              open.append((n[1],child))
+        
+         
     
      close.append(n)

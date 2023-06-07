@@ -9,8 +9,6 @@ grpah = { "A":[("B",2),("C",2)],
 
 # for example  "A":[("B",2)  "A" is the parent "B" is it's child and 2 is the depth level 
 
-# you can test the program by giving the Target node "H" this will not HIT beacuse the Target Node "H" is at level 4 depth
-
 
 node = input("Enter the Target Node: ")
 
@@ -43,7 +41,8 @@ while(check):
             
             if not ((n[1],child[0],child[1]) in close):
                 
-                if child[1] <= 3: # here i am checking if the depth is greater than 3 or not                    
+                if child[1] <= 3: # here i am checking if the depth is greater than 3 or not
+                    
                     open.append((n[1],child[0],child[1]))
         close.append(n)
         # print(open)
